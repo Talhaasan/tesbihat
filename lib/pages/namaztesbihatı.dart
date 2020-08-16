@@ -31,8 +31,10 @@ class _NamazTesbihati extends State<NamazTesbihati> {
           ),
         ),
         floatingActionButton: Container(
-            width: 90,
-            height: 90,
+            width: 221  ,
+            height: 221,
+            //alignment: Alignment.center,
+            margin: EdgeInsets.fromLTRB(50, 0, 90, 0),
             child: RaisedButton(
                 onPressed: () {
                   setState(() {
