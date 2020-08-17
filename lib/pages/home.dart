@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tesbihat/pages/ozelTesbihat.dart';
 //import 'package:tesbihat/pages/main.dart';
 
 class Home extends StatefulWidget {
@@ -30,8 +31,12 @@ class _HomeState extends State<Home> {
               height: 150,
               child: RaisedButton(              
                 onPressed: () {
-                  Navigator.pushNamed(context, "/namazTesbihatı");
-                },
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OzelTesbihatPage()),
+                    );
+                  },
+              
                 child: Text("Özel Tesbihat",style:TextStyle(fontSize: 30,color: Colors.lightBlue[300]),),
                 color: Colors.green[500],
                 shape: RoundedRectangleBorder(

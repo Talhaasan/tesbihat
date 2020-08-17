@@ -26,7 +26,7 @@ class _NamazTesbihati extends State<NamazTesbihati> {
               image: DecorationImage(
                   image: AssetImage("assets/images/background_for_counter.jpg"),
                   fit: BoxFit.cover)),
-          margin: EdgeInsets.fromLTRB(100, 200, 100, 0),
+          margin: EdgeInsets.fromLTRB(100, 200, 0, 0),
           width: 200,
           height: 100,
           //padding: ,
