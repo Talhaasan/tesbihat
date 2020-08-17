@@ -26,9 +26,9 @@ class _NamazTesbihati extends State<NamazTesbihati> {
               image: DecorationImage(
                   image: AssetImage("assets/images/background_for_counter.jpg"),
                   fit: BoxFit.cover)),
-          margin: EdgeInsets.fromLTRB(100, 200, 0, 0),
-          width: 200,
-          height: 100,
+          margin: EdgeInsets.fromLTRB(110, 175, 100, 100),
+          width: 195,
+          height: 65,
           //padding: ,
           child: RaisedButton(
             //Padding(padding: EdgeInsets.only(top: 20)),
@@ -37,10 +37,11 @@ class _NamazTesbihati extends State<NamazTesbihati> {
             child: Text(
               count.toString(),
               style: TextStyle(
-                  color: Colors.white,
+                
+                  color: Colors.black,
                   fontSize: 72,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'digital'),
+                  fontFamily: 'patopian'),
             ),
           ),
         ),
