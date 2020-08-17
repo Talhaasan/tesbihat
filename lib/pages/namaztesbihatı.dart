@@ -21,18 +21,32 @@ class _NamazTesbihati extends State<NamazTesbihati> {
           title: Text("Namaz Tesbihatı"),
           centerTitle: true,
         ),
-        body: Center(
-          child: Text(
-            count.toString() + " " + tesbih,
-            style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'sedgwick'),
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/images/background_for_counter.jpg"),
+                  fit: BoxFit.cover)),
+          margin: EdgeInsets.fromLTRB(100, 200, 100, 0),
+          width: 200,
+          height: 100,
+          //padding: ,
+          child: RaisedButton(
+            //Padding(padding: EdgeInsets.only(top: 20)),
+            color: Colors.blue,
+
+            child: Text(
+              count.toString(),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 72,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'digital'),
+            ),
           ),
         ),
         floatingActionButton: Container(
-            width: 221  ,
-            height: 221,
+            width: 200,
+            height: 200,
             //alignment: Alignment.center,
             margin: EdgeInsets.fromLTRB(50, 0, 90, 0),
             child: RaisedButton(
@@ -48,10 +62,10 @@ class _NamazTesbihati extends State<NamazTesbihati> {
                     Navigator.pushNamed(context, "/");
                   }
                 },
-                color: Colors.deepOrange,
+                color: Colors.blueGrey,
                 textColor: Colors.white,
                 shape: CircleBorder(side: BorderSide.none),
-                child: Text('Login', style: TextStyle(fontSize: 20.0)))),
+                child: Text('', style: TextStyle(fontSize: 20.0)))),
       ),
     );
   }
