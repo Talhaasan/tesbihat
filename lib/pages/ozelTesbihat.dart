@@ -20,7 +20,7 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
   TextEditingController temizleController = TextEditingController();
 
   FocusNode myFocusNode = new FocusNode();
-  
+
   String ozelTesbihat = "";
   String tesbihatSayisi = "";
 
@@ -30,7 +30,7 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.deepPurple[100],
+      backgroundColor: Colors.amber[100],
       body: Container(
         child: SingleChildScrollView(
           child: new Column(
@@ -40,7 +40,6 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
                   margin: EdgeInsets.all(10),
                   child: TextField(
                     focusNode: myFocusNode,
-                    
                     // keyboardType: TextInputType.number,
                     controller: ozeltesbihatController,
                     decoration: InputDecoration(
@@ -52,23 +51,22 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
                           
                         });
                           },
-                        
-                        icon: Icon(Icons.delete_forever,color: myFocusNode.hasFocus?Colors.red:Colors.grey,)),
+                        icon: Icon(Icons.delete_forever)),
                       // hintText: "An Outline Border TextField",
 
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5),
                           borderSide:
-                              BorderSide(color: Colors.deepPurple, width: 2.0)),
+                              BorderSide(color: Colors.brown[900], width: 2.0)),
                       labelText: 'Tesbihatı Girin',
                       labelStyle: TextStyle(
                           color: myFocusNode.hasFocus
-                              ? Colors.deepPurple
-                              : Colors.grey[700]),
+                              ? Colors.brown[900]
+                              : Colors.brown[900]),
 
                       focusedBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.grey[700], width: 2.0)),
+                              BorderSide(color: Colors.deepOrange[900], width: 2.0)),
                     ),
                     onChanged: (text) {
                       setState(() {
@@ -90,12 +88,12 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
                           
                         });
                         },
-                        icon: Icon(Icons.delete_forever),color: myFocusNode.hasFocus?Colors.grey:Colors.red,),
+                        icon: Icon(Icons.delete_forever)),
                       
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
                         borderSide: BorderSide(
-                          color: Colors.deepPurple,
+                          color: Colors.brown[900],
                           width: 2.0,
                         ),
                       ),
@@ -103,11 +101,11 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
                           'Tesbihat Sayısını Girin', //Matrah hesaplaması için
                       labelStyle: TextStyle(
                           color: myFocusNode.hasFocus
-                              ? Colors.deepPurple
-                              : Colors.grey[700]),
+                              ? Colors.brown[900]
+                              : Colors.brown[900]),
                       focusedBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.grey[700], width: 2.0)),
+                              BorderSide(color: Colors.deepOrange[900], width: 2.0)),
                     ),
                     onChanged: (text) {
                       setState(() {
@@ -123,11 +121,14 @@ class _OzelTesbihatPageState extends State<OzelTesbihatPage> {
                       child: RaisedButton(
                           child: Text("Kaydet"),
                           onPressed: () {},
-                          color: Colors.blueGrey[800],
+                       color: Colors.tealAccent[700],
+                           //color: Colors.blueGrey[800],
                           textColor: Colors.white,
                           padding: EdgeInsets.fromLTRB(10, 10, 10, 10))),
                 ],
               ),
+              
+
             ],
           ),
         ),

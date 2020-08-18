@@ -15,32 +15,34 @@ class _NamazTesbihati extends State<NamazTesbihati> {
     return MaterialApp(
       title: 'Tesbihat',
       home: Scaffold(
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.amber[100],
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.deepOrange[900],
           title: Text("Namaz Tesbihatı"),
           centerTitle: true,
         ),
         body: Container(
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/images/background_for_counter.jpg"),
-                  fit: BoxFit.cover)),
-          margin: EdgeInsets.fromLTRB(110, 175, 100, 100),
-          width: 195,
-          height: 65,
+              // 
+              color: Colors.black,
+              ),
+          margin: EdgeInsets.fromLTRB(100, 175, 100, 100),
+          
+          width: 300,
+          height: 55,
           //padding: ,
           child: RaisedButton(
             //Padding(padding: EdgeInsets.only(top: 20)),
-            color: Colors.blue,
+            color: Colors.blue[300],
 
             child: Text(
               count.toString(),
               style: TextStyle(
-                
-                  color: Colors.black,
-                  fontSize: 72,
-                  fontWeight: FontWeight.bold,
+                  height: 0.93,
+                  
+                  color: Colors.white,
+                  fontSize: 70,
+                  //fontWeight: FontWeight.bold,
                   fontFamily: 'patopian'),
             ),
           ),
@@ -63,8 +65,8 @@ class _NamazTesbihati extends State<NamazTesbihati> {
                     Navigator.pushNamed(context, "/");
                   }
                 },
-                color: Colors.blueGrey,
-                textColor: Colors.white,
+                color: Colors.tealAccent[700],
+                //textColor: Colors.white,
                 shape: CircleBorder(side: BorderSide.none),
                 child: Text('', style: TextStyle(fontSize: 20.0)))),
       ),
